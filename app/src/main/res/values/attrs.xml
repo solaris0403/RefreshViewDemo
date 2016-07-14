@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RefreshLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="header" format="reference"/>
+        <attr name="content" format="reference"/>
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="resistance" format="float"/>
+
+        <attr name="duration_to_close" format="integer"/>
+        <attr name="duration_to_close_header" format="integer"/>
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ratio_of_header_height_to_refresh" format="float"/>
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="pull_to_fresh" format="boolean"/>
+
+        <!-- keep header when refreshing-->
+        <attr name="keep_header_when_refresh" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClassicHeader">
+        <attr name="rotate_ani_time" format="integer" />
+    </declare-styleable>
+</resources>
